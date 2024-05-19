@@ -1,0 +1,73 @@
+@import url(<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.{
+    margin:0;
+    padding: 0;
+    width: 80px;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+div.img{
+    src: alcaldiaNeiva2024.jpg; 
+    width:  80pv;
+    height:  80pv;
+    text-align: center;
+}
+.img.text{
+    background: url(oficialSanpedroHuila24.jpg);
+    font-size: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+.wrapper{
+    width: 200px;
+    background: blue;
+    color: black;
+}
+.wrapper h1{
+    font-size: 13.3px;
+    text-align: center;
+}
+.wrapper .input-box{
+    width: 75%;
+    height: 75px;
+    background: seashell;
+    margin: 30px 0;  
+}
+.input-box input{
+    width: 100%;
+    height:  100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 4px solid rgba(255, 255, 255, 2);
+    border-radius: 10px;
+    
+}
+.input-box input::placeholder{
+    color: gray;
+}
+.input-box i{
+    position: absolute;
+    right: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+h1{
+    color: black;
+    font-size: 10px;
+    }

@@ -1,0 +1,85 @@
+@import url(<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.{
+    margin:0;
+    padding: 0;
+    width: 150px;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+img.text{
+    font-size: 30px;
+    text-align: center;
+    display:  flex;
+    justify-content: space-between;
+}
+.img{  
+  background: url(oficialSanpedroHuila24.jpg);
+  background-image: url(oficialSanpedroHuila24.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.5;
+}
+.wrapper{
+    width: 105px;
+    background: purple;
+    color: black;
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box{
+    width: 50%;
+    height: 50px;
+    background: black;
+    margin: 30px;
+}
+.input-box input{
+    width: 50%;
+    height:  50%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 2);
+    border-radius: 20px;
+}
+.input-box input::placeholder{
+    color: black;
+}
+.input-box i{
+    position: absolute;
+    right: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-weight: bold;
+}
+h1{
+    color: black;
+    font-size: 23.5px;
+    }
+.form-txt{
+    font: 16px;
+    color:  #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51D94C;
+    box-shadow: 0 0 20px grba (25, 254, 0, 4);
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #50E04B;
+}
