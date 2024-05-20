@@ -16,15 +16,15 @@
 
         $descrip_proyecto = $_POST["descrip_proyecto"]
 
-        $gestorcultural = $_POST["gestorcultural"];
+       /* $gestorcultural = $_POST["gestorcultural"];
 
         $creadorcultural = $_POST['creadocultural'];
 
-        $Fecha_diligenciamiento = $_POST["fechdiligencia"];
+        $Fecha_diligenciamiento = $_POST["fechdiligencia"];*/
 
   /* Insertar los datos de la tabla (ejempl: "nombre")*/
 
-   $sql = INSERT INTO usuario(nombre, apellidos, Telefono, CorreoElectronico, gestorcultural, creadocultural, fechdiligencia);
+   $sql = INSERT INTO usuario(nombre, apellidos, Telefono, CorreoElectronico,descrip_proyecto);
 
     if($con->query($sql) === TRUE){
       header("location:../HTML/Carga.html");
