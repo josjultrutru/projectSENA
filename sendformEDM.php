@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="description" content="barra navegacion HTML5">
-<meta name="keywords" content="HTML5, CSS3, JavaScript">
+<meta name="keywords" content="HTML5, CSS3, PHP">
 <title>Barra de Navegacion del sistema en  HTML5</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -32,7 +32,7 @@
 
         $descrip_proyecto = $_POST["descrip_proyecto"]
 
-        $gestorcultural = $_POST["gestorcultural"];
+       /* $gestorcultural = $_POST["gestorcultural"];
 
         $creadorcultural = $_POST['creadocultural'];
 
@@ -43,7 +43,7 @@
 
         $Danza = $_POST["Danza"];
 
-        $Teatro = $_POST["Teatro"];
+        $Teatro = $_POST["Teatro"];*/
         
     ?>
 

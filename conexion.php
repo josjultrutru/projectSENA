@@ -1,17 +1,22 @@
 
 <?php   
 
-       $hos = "127.0.0.1";
+/* se conectara al archivo de conexion */
+require_once "conexion.php"
+
+       $hos = "localhost;
        $usua = "root";
        $Password = "";
+       $puerto = "3306";
        $bas_datos = "usersena";
+       $Tabla = "login";
 
 
-        $con = new mysqli ($hos, $usua,$Password = "" ,$bas_datos ="usersena"); 
+        $conexion = new mysqli ($hos, $usua, $Password , $puerto, $bas_datos, $Tabla ); 
  
-         if ($con->connect_error)
+         if ($conexion->connect_error)
              {
-              die("Conexion fallida:" . $con->connect_error);
+              die("Conexion fallida:" . $conexion->connect_error);
             }
 ?>
 

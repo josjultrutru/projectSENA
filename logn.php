@@ -1,4 +1,4 @@
-<?php   
+<?php  
 
        /* se conectara al archivo de conexion */
        require_once "conexion.php"
@@ -6,32 +6,25 @@
 
        /* obtener los datos del formulario */
 
-       $nombre = $_POST["nombre"];
+        $CorreoElectronico = $_POST["CorreoElectronico"];
 
-       $apellidos = $_POST["apellidos"];
-
-        $Telefono = $_POST["phone"];
-
-        $CorreoElectronico = $_POST["Correo"];
-
-        $descrip_proyecto = $_POST["descrip_proyecto"]
-
-       /* $gestorcultural = $_POST["gestorcultural"];
-
-        $creadorcultural = $_POST['creadocultural'];
-
-        $Fecha_diligenciamiento = $_POST["fechdiligencia"];*/
+        $Password = $_POST["Password"];
 
   /* Insertar los datos de la tabla (ejempl: "nombre")*/
 
-   $sql = INSERT INTO usuario(nombre, apellidos, Telefono, CorreoElectronico,descrip_proyecto);
+   $sql = INSERT INTO login ( CorreoElectronico, Password) VALUES ('$CorreoElectronico', '$Password' ) ;
 
-    if($con->query($sql) === TRUE){
-      header("location:../HTML/Carga.html");
+   
+
+    if($conexion->query($sql) === TRUE){
+      header("location:../HTML/carga.html");
        } else{
-       echo "Error al registrar:" . $con->error;
+       echo "Error al registrar:" . $conexion->error;
        }
       /*Cerrar la conexion */
-  $con->close();
+  $conexion->close();
 
 ?>
+
+
+
