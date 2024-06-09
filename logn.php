@@ -1,16 +1,17 @@
-<?php  
-      
-       $host = "localhost;
-       $usuario = "root";
-       $Password = "";
-       $puerto = 3306;
-       $bas_datos = "usersena";
-       $Tabla = "login";
+<?php
+require '../src/Crud.php';
 
+$crud = new Crud($pdo);
 
-       $enlace = mysqli_connect ( "localhost", "root", "", 3306, "usersena", "login");
-
-      
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    if (isset($_POST['create'])) {
+        $crud->create($_POST['name'], $_POST['email']);
+    } elseif (isset($_POST['update'])) {
+        $crud->update($_POST['id'], $_POST['name'], $_POST['email']);
+    } elseif (isset($_POST['delete'])) {
+        $crud->delete($_POST['id']);
+    }
+}
 ?>
 
 <!DOCTYPE html>

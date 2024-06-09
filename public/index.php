@@ -14,6 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 $users = $crud->read();
+var_dump($users);
+
 ?>
 
 <!DOCTYPE html>
